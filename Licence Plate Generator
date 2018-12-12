@@ -1,0 +1,20 @@
+import random
+while True:
+    choice = input("Would you like me to generate a random car license plate?")
+    if choice == "yes":
+        first = random.randint(1, 9)
+        second = random.randint(1, 9)
+        alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+        third = random.choice(alphabet)
+        fourth = random.choice(alphabet)
+        fifth = random.randint(1, 9)
+        seven = random.randint(1, 9)
+        eight = random.randint(1, 9)
+        first = str(first)
+        second = str(second)
+        fifth = str(fifth)
+        seven = str(seven)
+        eight = str(eight)
+        print(first + second + third.upper() + fourth.upper() + " " + fifth + seven + eight)
+    else:
+        print("Ok")
